@@ -19,7 +19,7 @@ def menu():
 #Funcion recursiva desencriptar, recibe el texto, la posicion que se usa para ir evaluando la lista y el auxiliar key
 def encriptar(texto,pos,key):
     if(pos==len(texto)-1):#Caso base: Llegar al final de la lista
-        preTexto=unichr(ord(texto[pos])-3) #Se altera su codigo ascii
+        preTexto=unichr(ord(texto[pos])-3) #Se altera su codigo unicode
         key=key+preTexto
         return key
     if (pos<len(texto)-1): #Mientras recorro la lista
